@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Nextia Travel</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./stylesheets/main.css">
+	<link rel="stylesheet" href="./stylesheets/media.css">
+</head>
+<body>
+	<section class="container-fluid contenedor">
+		<header class="header">
+			<figure class="logo">
+				<img src="nextia_logo.svg" alt="" width="70" height="70">
+			</figure>
+			<nav class="navigation">
+				<ul class="list-unstyled navigation-list">
+					<li class="navigation-list-item">
+						<span class="fa fa-search color-yellow"></span>
+						Rutas
+						</li>
+					<li class="navigation-list-item">
+						<span class="fa fa-calendar color-yellow"></span>
+						Mi itinerario</li>
+					<li class="navigation-list-item">
+						<span class="fa fa-user color-yellow"></span>
+						Iniciar
+					</li>
+				</ul>
+					
+				<p class="menu-button" >
+					<span class="fa fa-bars" id="menu-button"></span>
+					<span class="fa fa-close hide" id="close"></span>
+				</p>
+				
+			</nav>
+			<ul class="canvas-menu list-unstyled" id="canvas-menu">
+				<li class="canvas-menu-item">Item 1</li>
+				<li class="canvas-menu-item">Item 2</li>
+				<li class="canvas-menu-item">Item 3</li>
+				<li class="canvas-menu-item">Item 4</li>
+				<li class="canvas-menu-item">Item 5</li>
+			</ul>
+			
+		</header>
+		<section class="intro row">
+			<!-- <img src="nextia-header-min.jpg" alt="" class="img-responsive intro-img"> -->
+			<article class="intro-info col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-0 col-lg-8 col-lg-offset-0">
+				<h1 class="text-center intro-info-title">Descubre mexico</h1>
+				<p class="text-center intro-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut placeat obcaecati, doloremque ullam vere deserunt consectetur dolorum quisquam repreh.deserunt consectetur dolorum quisquam repreh</p>
+				<form action="" class="intro-form">
+				<select name="" id="">
+					<option value="" selected>Ciudad de inicio</option>
+					<option value="">Guadajara</option><option value="" >Ciudad de Mexico</option>
+				</select>
+
+				<select name="" id="">
+					<option value="" selected>Ciudad de destino</option>
+
+					<option value="">Monterrey</option>
+					<option value="" >Puebla</option>
+					<option value="">Durango</option>
+					<option value="" >Colima</option>
+				</select>
+				<select name="" id="">
+					<option value="" selected>Numero de dias</option>
+					<option value="">1</option>
+					<option value="" >2</option>
+					<option value="">3</option>
+					<option value="" >4</option><option value="">5</option>
+					<option value="" >6</option>
+				</select>
+				<button type="button" class="my-btn">Buscar</button>
+			</form>
+			<p class="intro-play center-block">
+				<span class="fa fa-play"></span>
+			</p>
+			</article>
+
+		</section>
+
+		<section class="know-us row">
+			<article class="know-us-item col-xs-12 col-sm-8 col-sm-offset-2 col-xs-12 col-lg-6 col-lg-offset-3 text-center">
+				<h2 class="know-us-item-title my-title">Conoce Nextia</h2>
+				<p class="know-us-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, laboriosam! Minus soluta hic, odit fugit quibusdam dolorem. Cupiditate quod obcaeca uam officia, porro ratione nam!</p>
+				<a href="" class="my-btn2">ver más</a>
+			</article>
+			
+		</section>
+
+		<section class="divider"></section>
+
+		<section class="routes">
+			<h2 class="my-title">rutas</h2>
+			<article class="routes-wrap">
+				<div class="routes-wrap-item">
+					<img src="https://scontent-dfw1-1.xx.fbcdn.net/v/t1.0-9/13241336_1096459077063571_4953061726514389843_n.jpg?oh=aef63d5c302e4b396070aa1728c7d1d7&oe=57C451C8" alt="" class="routes-wrap-item-img">
+				</div>
+
+				<div class="routes-wrap-item">
+					<img src="https://scontent-dfw1-1.xx.fbcdn.net/v/t1.0-9/13241336_1096459077063571_4953061726514389843_n.jpg?oh=aef63d5c302e4b396070aa1728c7d1d7&oe=57C451C8" alt="" class="routes-wrap-item-img">
+				</div>
+
+				<div class="routes-wrap-item">
+					<img src="https://scontent-dfw1-1.xx.fbcdn.net/v/t1.0-9/13241336_1096459077063571_4953061726514389843_n.jpg?oh=aef63d5c302e4b396070aa1728c7d1d7&oe=57C451C8" alt="" class="routes-wrap-item-img">
+				</div>
+
+				<div class="routes-wrap-item">
+					<img src="https://scontent-dfw1-1.xx.fbcdn.net/v/t1.0-9/13241336_1096459077063571_4953061726514389843_n.jpg?oh=aef63d5c302e4b396070aa1728c7d1d7&oe=57C451C8" alt="" class="routes-wrap-item-img">
+				</div>
+			</article>
+		</section>
+
+	<footer class="footer">
+		footer here...
+	</footer>
+
+	</section>
+
+	<script>
+		var menuButton = document.getElementById('menu-button');
+		var menuButtonClose = document.getElementById('close')
+		var canvasMenu = document.getElementById('canvas-menu');
+		menuButton.addEventListener('click', function(ev){
+			ev.preventDefault();
+			canvasMenu.classList.toggle('right0');
+			menuButtonClose.classList.toggle('hide');
+			menuButton.classList.toggle('hide');
+
+		})
+
+		menuButtonClose.addEventListener('click', function(ev){
+			ev.preventDefault();
+			canvasMenu.classList.toggle('right0');
+			menuButtonClose.classList.toggle('hide');
+			menuButton.classList.toggle('hide');
+
+		})
+
+	</script>
+
+
+</body>
+</html>

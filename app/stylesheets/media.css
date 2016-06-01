@@ -1,0 +1,52 @@
+
+
+@media screen and (min-width: 769px){
+	/*.navigation span.fa-search, span.fa-user{
+		display: inline-block !important;
+	}*/
+
+	.header{
+		flex-direction:row;
+		justify-content:space-between;
+		padding: .5em 7% 0 15%;
+	}
+	.header .navigation-list-item{
+		margin-right: 1.4em;
+		flex-direction:row;
+	}
+
+	.header .navigation-list-item span{
+		margin:5px;
+	}
+
+	.header .logo{
+		width: 80px;
+		height: 80px;
+	}
+
+}
+
+
+@media screen and (min-width: 800px){
+	.intro{
+		height: 680px;
+	}
+	.intro .intro-info-title{
+		 font-size: 2.5em;
+		
+	}
+	
+	.intro .intro-form{
+		background: white;
+		flex-direction:row;
+
+	}
+
+	.intro .intro-form select{
+		margin: 15px !important;
+		
+	}
+}
+
+
+

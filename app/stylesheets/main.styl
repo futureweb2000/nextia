@@ -1,0 +1,247 @@
+@import 'nib'
+
+amarillo = #FCBE2C
+grisesito = #D1CFD1
+
+.container-fluid
+	padding 0 !important
+
+
+
+.contenedor
+	width 100%
+
+.header
+	background #000
+	color white
+	display flex
+	justify-content center
+	flex-direction column
+	align-items center
+	padding .5em 1em
+	position relative
+	.logo
+		width 100px
+		height 100px
+		img
+			width 100%
+			height 100%
+	.navigation
+		margin 0
+		display flex
+		&-list
+			padding 0
+			display flex
+			justify-content center
+			&-item
+				text-align center
+				font-size 1.1em
+				margin-right 1em
+				transition .4s
+				border-top 3px solid transparent		
+				text-transform uppercase
+				display flex
+				flex-direction column
+				justify-content center
+				align-items center
+				&:last-child
+					margin 0
+				&:hover
+					border-top 3px solid amarillo	
+					cursor pointer	
+					
+				span
+					margin .2em 0
+
+.intro
+	background url('../nextia-header-min.jpg')
+	background-size cover
+	color white
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+	display flex
+	flex-direction column
+	align-items center
+	justify-content center
+	margin 0
+	&-info
+		display flex
+		flex-direction column
+		align-items center
+		justify-content center
+		padding 20px 0
+		&-title
+			margin 0 auto
+			text-transform uppercase
+			// font-size 2.5em
+			font-size 1.8em
+				
+		&-text
+			margin 0
+			padding 0
+			margin-bottom 30px
+			
+		
+	.intro-form
+		padding 0
+		display flex
+		justify-content center
+		flex-direction column
+		font-size 1.2em
+		select
+			// margin .8em .4em
+			margin .4em
+			border 0
+			outline 0
+			cursor pointer
+			color #000
+			border-radius 0
+			background white
+			text-transform uppercase
+			// border-bottom 2px solid grisesito
+			
+			option 
+				margin 0
+		button
+			margin 0
+			
+		
+	&-play
+		border 1px solid white
+		border-radius 50%
+		width 2em
+		height 2em
+		display flex
+		justify-content center
+		align-items center
+		cursor pointer
+		margin-top 40px
+		transition .4s
+		background rgba(255,255,255,.2)
+		font-size 1.3em
+		span
+			margin-left 4px 	
+		&:hover
+			box-shadow 0 0 40px #fff
+			transform scale(1.2)	
+
+.routes
+	padding 2em 0
+	&-wrap
+		display flex
+		flex-wrap wrap
+		justify-content center
+		&-item
+			background amarillo
+			width 280px
+			height 350px
+			margin 5px
+			&-img
+				width 100%
+				height 100%
+		
+.know-us
+	margin 0
+	padding 6em 0
+	&-item
+		border 0
+		&-title
+			margin 0
+		&-text
+			margin 0
+			margin-bottom 1.3em	
+
+.menu-button
+	font-size 20px
+	position absolute
+	top 0
+	right 0
+	color lightgray
+	z-index 10
+	cursor pointer
+	margin 25px
+	transition .3s
+	&:hover
+		color amarillo
+		transform scale(1.08)
+	
+
+
+.footer
+	background #444345
+	width 100%
+	height 200px
+	color white
+
+
+.canvas-menu
+	background #000
+	border 2px solid amarillo
+	font-size 22px
+	position fixed
+	width 200px
+	right -200px
+	top 0
+	transition .3s
+	z-index 2
+	padding 20px
+	&-item
+		border-bottom 1px solid red
+		padding .1em
+
+.back
+	background red
+.divider
+	background #eee
+	box-shadow 0 0 15px grisesito
+	width 95%
+	height .1em
+	margin 0 auto
+.my-btn
+	background amarillo
+	color #fff
+	border 0
+	outline 0
+	padding .4em .8em
+	margin 0
+.my-btn2
+	padding .4em 1.4em
+	border 2px solid grisesito
+	background white
+	text-transform uppercase
+	color #000
+	font-size 1em
+	transition .4s
+	display inline-block
+	
+	&:hover
+		transform scale(1.05)
+		color amarillo
+		
+
+.my-title
+	text-transform uppercase
+	color #444
+	font-size 1.6em
+	display flex
+	flex-direction column
+	align-items center
+	justify-content center
+	&:after
+		content ""
+		width 40px
+		height 3px
+		margin 10px 0
+		background amarillo
+		display inline-block
+.right0
+	right 0
+
+
+.font12
+	font-size 12px
+
+.color-yellow
+	color amarillo
+
